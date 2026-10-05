@@ -1,0 +1,8 @@
+{
+  "name": "sonraki-tren",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node tests/core.test.mjs"
+  }
+}

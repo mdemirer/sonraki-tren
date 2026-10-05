@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Sonraki Tren</title>
+  <meta name="description" content="İstanbul metro ve tramvay istasyonları için tarifeye göre tahmini geliş süreleri. Çevrimdışı çalışır.">
+  <meta name="theme-color" content="#E6EAEC" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0E1828" media="(prefers-color-scheme: dark)">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="Sonraki Tren">
+  <link rel="preload" href="fonts/overpass-latin-800-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="styles.css">
+  <script src="config.js"></script>
+  <script type="module" src="js/app.js"></script>
+</head>
+<body data-view="home">
+  <header class="top">
+    <a class="brand" href="#/">
+      <svg viewBox="0 0 32 32" width="28" height="28" aria-hidden="true"><rect x="2" y="2" width="28" height="28" rx="7" fill="var(--ink)"/><path d="M9 23V9h2.6L16 16l4.4-7H23v14h-3v-8.6l-4 6.2-4-6.2V23z" fill="var(--bg)"/></svg>
+      <h1>Sonraki tren</h1>
+    </a>
+    <a href="#/ayarlar" class="icon settings" aria-label="Ayarlar">
+      <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" class="stroke"><circle cx="12" cy="12" r="3.2"/><path d="M12 2.5v3M12 18.5v3M2.5 12h3M18.5 12h3M5.3 5.3l2.1 2.1M16.6 16.6l2.1 2.1M5.3 18.7l2.1-2.1M16.6 7.4l2.1-2.1"/></svg>
+    </a>
+  </header>
+  <div class="searchbar">
+    <input id="q" type="search" placeholder="İstasyon ara" autocomplete="off" autocapitalize="off" spellcheck="false" enterkeyhint="search" aria-label="İstasyon ara">
+  </div>
+  <div id="banners" aria-live="polite"></div>
+  <main id="main"></main>
+  <footer class="foot">
+    <p>Süreler Metro İstanbul sefer tarifesinden hesaplanır; anlık gecikmeleri göstermez.</p>
+    <p>Resmi uygulama değildir. Veriler: <a href="https://data.ibb.gov.tr" target="_blank" rel="noopener">İBB Açık Veri</a> (CC BY 4.0).</p>
+  </footer>
+  <noscript><p class="none">Bu uygulama JavaScript gerektirir.</p></noscript>
+</body>
+</html>

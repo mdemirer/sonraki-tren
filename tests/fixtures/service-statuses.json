@@ -1,0 +1,19 @@
+{
+ "Success": true,
+ "Error": null,
+ "Data": [
+  {
+   "LineId": 7,
+   "LineName": "M7",
+   "IsActive": true,
+   "UpdateDate": "2026-07-27T09:27:37.103",
+   "LineLongDescription": "Yıldız-Mahmutbey Metro Hattı",
+   "Description": "Onarım çalışması nedeniyle seferler Yıldız-Mecidiyeköy ve Nurtepe istasyonundan aktarmalı olarak Çağlayan-Mahmutbey istasyonları arasında yapılmaktadır.",
+   "LineColor": {
+    "Color_R": "248",
+    "Color_G": "154",
+    "Color_B": "186"
+   }
+  }
+ ]
+}
